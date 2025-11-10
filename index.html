@@ -1,0 +1,113 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "birthday_site");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Happy Birthday,JADA 🎉</title>
+  
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="playSong()">
+  <!-- Birthday Song -->
+  <audio id="birthdaySong" src="song.mp3" autoplay loop></audio>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>💜 Happy Birthday,JADA! 💜</h1>
+    <img src="images/jada.svg.jpg" alt="" class="icon">
+    <p>Welcome to club JADA👑</p>
+    <p>Today we celebrate the amazing, kind, and beautiful soul that you are 🎂✨</p>
+    <p>Unmute for a wholesome experience💗</p>
+  </section>
+
+  <!-- Main Content Layout -->
+  <section class="content">
+    <!-- Left: Gallery -->
+    <div class="left">
+      <h2>🌸 Beautiful Memories 🌸</h2>
+      <div class="slideshow">
+        <!-- Slide images -->
+        <div class="slide active">
+          <img src="images/photo1.jpg" alt="Memory 1">
+          <p class="caption">🎂 A day full of joy and smiles!</p>
+        </div>
+        <!-- Add other slides here -->
+         <div class="slide active">
+          <img src="images/photo1.jpg" alt="Memory 1">
+          <p class="caption">🎂 You are an amazing person!</p>
+        </div>
+        <div class="slide active">
+          <img src="images/photo2.jpg" alt="Memory 1">
+          <p class="caption">🎂 Best wishes to my chomie💗!</p>
+        </div>
+        <div class="slide active">
+          <img src="images/photo3.jpg" alt="Memory 1">
+          <p class="caption">🎂 Rene loves you💜!</p>
+        </div>
+        <div class="slide active">
+          <img src="images/photo4.jpg" alt="Memory 1">
+          <p class="caption">🎂 To many more amazing years ahead💗!</p>
+        </div>
+        <div class="slide active">
+          <img src="images/photo5.jpg" alt="Memory 1">
+          <p class="caption">🎂 Happy birthday wakili!</p>
+        </div>
+        <div class="slide active">
+          <img src="images/photo6.jpg" alt="Memory 1">
+          <p class="caption">🎂 Have a blast love💜!</p>
+        </div>
+        <div class="slide active">
+          <img src="images/photo7.jpg" alt="Memory 1">
+          <p class="caption">🎂 Siku ikubambe mkuu!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Little Notes -->
+    <div class="right">
+      <h2>💌 Little Notes Just for You</h2>
+      <p>🌟 You light up every room you walk into💗.</p>
+      <p>🌟 May your year be filled with joy, laughter, and success😘.</p>
+      <p>🌟 I’m so grateful to have you in my life. Cheers to many more memories! 🥂</p>
+      <p>🌟 You don’t age, you just level up like a video game boss 🕹️👑</p>
+      <p>🌟🥂 Cheers to more inside jokes, late-night chats, and random adventures 🚀💫</p>
+      <p>🌟 You are the most amazing human being🔥 and never forget I am always your number supporter</p>
+      <p>🌟 May all your wishes come true coz no one deserves it more than you</p>
+      <p>🌟 Always rooting for you love💜</p>
+    </div>
+  </section>
+
+  <!-- Sweet Messages Section -->
+  <section class="messages">
+    <!-- Left: Leave a Birthday Wish -->
+    <div class="wish-form-box">
+      <h2>🎁 Leave a Birthday Wish</h2>
+      <form id="wishForm">
+        <input type="text" name="name" placeholder="Your Name 💌" required>
+        <textarea name="message" placeholder="Your Birthday Wish 🎂" required></textarea>
+        <button type="submit">Send Wish ✨</button>
+      </form>
+      <p id="successMsg" class="hidden">✅ Your wish was sent!</p>
+    </div>
+
+    <!-- Right: All Wishes -->
+    <div class="wish-list">
+      <h3>💜 All Wishes</h3>
+      <div id="wishListContainer"></div> <!-- changed ID to avoid duplicates -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with 💜 by your tech bestie IRYN 👩🏽‍💻</p>
+    <p>© 2025 Birthday Site 🎂</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

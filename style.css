@@ -1,0 +1,1246 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #3a0ca3, #7209b7, #9d4edd);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 20px;
+  background: rgba(0,0,0,0.3);
+  border-bottom: 3px solid #ffb6ff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Gallery */
+.gallery {
+  padding: 60px 20px;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+/* Messages */
+.messages {
+  background: rgba(255,255,255,0.1);
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 40px 20px;
+}
+
+.messages h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.messages p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  font-size: 1rem;
+  background: rgba(0,0,0,0.5);
+  border-top: 2px solid #ffb6ff;
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  bottom: -100px;
+  width: 30px;
+  height: 40px;
+  background: #ffb6ff;
+  border-radius: 50%;
+  animation: float 5s linear infinite;
+}
+.music-btn {
+  background: #ffb6ff;
+  color: #3a0ca3;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
+  background: #fff;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #000;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  text-align: center;
+  color: white;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.slide .caption {
+  background: rgba(0,0,0,0.6);
+  margin: 0;
+  padding: 0.8rem;
+  border-radius: 0 0 20px 20px;
+  font-size: 1rem;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Section Titles */
+h2, h3 {
+  color: #5a189a;
+  margin-bottom: 10px;
+}
+
+/* Wishes Section */
+.wishes {
+  background: #fff;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Form Styling */
+#wishForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#wishForm input,
+#wishForm textarea {
+  padding: 12px;
+  border: 2px solid #9d4edd;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#wishForm input:focus,
+#wishForm textarea:focus {
+  border-color: #7b2cbf;
+  box-shadow: 0 0 8px rgba(155, 89, 182, 0.5);
+}
+
+#wishForm button {
+  padding: 12px;
+  background: linear-gradient(135deg, #9d4edd, #c77dff);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s ease;
+}
+
+#wishForm button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+}
+
+/* Success Message */
+#successMsg {
+  color: #38b000;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Wishes List */
+#wishList {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.wish {
+  background: #f3e8ff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+.wish p {
+  margin: 5px 0;
+}
+
+.wish strong {
+  color: #5a189a;
+}
+
+.wish small {
+  display: block;
+  color: #777;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Fade-in animation for wishes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Gallery Section */
+.gallery {
+  margin: 50px auto;
+  text-align: center;
+  max-width: 800px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: fadeSlide 1s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Captions */
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(157, 78, 221, 0.85);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Slide animation */
+@keyframes fadeSlide {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Two-column layout */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.left, .right {
+  flex: 1;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Make slideshow images scale nicely */
+/* Slideshow images */
+.slideshow img {
+  width: 100%;
+  max-height: 400px;  /* adjust this value as you like */
+  object-fit: cover;  /* keeps aspect ratio, crops overflow neatly */
+  border-radius: 15px;
+}
+
+
+/* Wishes Bubble Style */
+.wish {
+  display: inline-block;
+  max-width: 75%;
+  margin: 10px 5px;
+  padding: 12px 18px;
+  background: #f3e8ff;
+  border-radius: 20px 20px 20px 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+  text-align: left;
+}
+
+.wish p {
+  margin: 0;
+}
+
+.wish strong {
+  color: #7b2cbf;
+}
+
+.wish small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #555;
+}
+
+.wishes {
+  display: block;
+  margin: 30px auto !important;   /* force centering */
+  max-width: 600px !important;    /* force narrow width */
+  width: 90% !important;          /* responsive */
+  background: #ede7f6;
+  border-radius: 15px;
+  padding: 20px;
+  color: #311b92;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+
+
+/* The form */
+.wishes form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.wishes input, 
+.wishes textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.wishes button {
+  background: #7b1fa2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+.wishes button:hover {
+  background: #4a148c;
+}
+
+/* Wishes display area */
+#wishList {
+  display: flex;
+  flex-wrap: wrap;     /* wraps to new line when full */
+  gap: 8px;            /* spacing between bubbles */
+  justify-content: center;
+}
+
+/* Each wish styled as a bubble */
+.wish-bubble {
+  background: #ce93d8; /* soft purple */
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  max-width: 200px;    /* keeps them short */
+  white-space: nowrap; /* keeps text in one line */
+  overflow: hidden;
+  text-overflow: ellipsis; /* truncate if too long */
+}
+
+/* Make wishes container look like chat */
+#wishList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Birthday Wish Box */
+.messages {
+  max-width: 400px;           /* Small box width */
+  margin: 30px auto;          /* Center the box */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Input + Textarea */
+.messages input, 
+.messages textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Button */
+.messages button {
+  background: #9b59b6; /* Purple */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.messages button:hover {
+  background: #8e44ad;
+}
+
+/* Success Message */
+#successMsg {
+  margin-top: 10px;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+/* Wishes Layout */
+#wishList {
+  display: flex;
+  flex-wrap: wrap;           /* Wrap when full */
+  gap: 8px;                  /* Space between wishes */
+  justify-content: center;   /* Center align */
+  margin-top: 15px;
+}
+
+/* Each Wish Bubble */
+.wish {
+  background: white;
+  color: #6c3483;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: inline-block;
+  max-width: 150px;          /* Prevent too long wishes */
+  white-space: nowrap;       /* Keep short inline */
+  overflow: hidden;
+  text-overflow: ellipsis;   /* Show "..." if too long */
+}
+/* Two Column Layout */
+.birthday-wishes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Wishes Left Side */
+.wishes-list {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-height: 250px;
+}
+
+#wishList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.wish {
+  background: white;
+  color: #6c3483;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: inline-block;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Wish Form Right Side */
+.wish-form {
+  flex: 1;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.wish-form input,
+.wish-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.wish-form button {
+  background: #9b59b6;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.wish-form button:hover {
+  background: #8e44ad;
+}
+
+#successMsg {
+  margin-top: 10px;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+/* Emoji Picker */
+.emoji-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+}
+
+#emojiBtn {
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+#emojiPicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Reactions under each wish */
+.wish {
+  background: white;
+  color: #6c3483;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  max-width: 150px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: inline-block;
+  position: relative;
+}
+
+.reactions {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.reactions span {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.reactions span:hover {
+  transform: scale(1.2);
+}
+
+/* Emoji container */
+.emoji-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+#emojiBtn {
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 22px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+#emojiBtn:hover {
+  background: #eee;
+}
+
+/* Emoji Picker Dropdown */
+#emojiPicker {
+  position: absolute;
+  top: 100%; /* directly under input */
+  left: 0;
+  margin-top: 8px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 20px;
+  z-index: 10;
+}
+
+#emojiPicker span {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#emojiPicker span:hover {
+  transform: scale(1.2);
+}
+
+.hidden {
+  display: none;
+}
+
+
+@keyframes float {
+  to { transform: translateY(-120vh); }    
+}   
+
+.messages-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.wish-form, .wish-list {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.wish-form h2, .wish-list h3 {
+  color: #6a0dad; /* Purple shade */
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: none;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #6a0dad;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #520a8a;
+}
+
+#wishList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#wishList .wish {
+  background: #f5f0ff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.messages {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Wishes (Left) */
+.wish-list {
+  flex: 2; /* Takes more space */
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-height: 400px;
+  overflow-y: auto; /* scroll if too many wishes */
+}
+
+#wishList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#wishList .wish {
+  background: #f5f0ff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Leave Wish (Right) */
+.wish-form {
+  flex: 1; /* Smaller width */
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.wish-form h2, 
+.wish-list h3 {
+  color: #6a0dad;
+}
+
+.wish-form input,
+.wish-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.wish-form button {
+  background: #6a0dad;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.wish-form button:hover {
+  background: #520a8a;
+}
+
+.messages {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Left Box - Leave a Wish */
+.wish-form {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-width: 300px;
+}
+
+.wish-form h2 {
+  color: #6a0dad;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.wish-form input,
+.wish-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.wish-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.wish-form button {
+  background: #6a0dad;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.wish-form button:hover {
+  background: #520a8a;
+}
+
+/* Right Box - All Wishes */
+.wish-list {
+  flex: 2;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.wish-list h3 {
+  color: #6a0dad;
+  margin-bottom: 15px;
+}
+
+#wishList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#wishList .wish {
+  background: #f3e8ff;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  display: inline-block;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+/* Right Box - All Wishes */
+.wish-list {
+  flex: 2;
+  background: linear-gradient(to right, #3a0ca3, #7209b7, #9d4edd); /* same site purple */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.wish-list h3 {
+  color: #fff; /* White heading */
+  margin-bottom: 15px;
+}
+
+/* Wish bubbles inside */
+#wishList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+#wishList .wish {
+  background: rgba(255, 255, 255, 0.15); /* subtle bubble */
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  max-width: 200px;
+  word-wrap: break-word;
+  text-align: left;
+}
+/* Right Box - All Wishes */
+.wish-list {
+  flex: 2;
+  background: #f3e8ff;  /* soft pastel purple */
+  color: #311b92;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  min-height: 250px;
+  max-height: 400px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.wish-list h3 {
+  color: #5a189a; /* deep purple for headings */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Wishes inside */
+#wishList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wish {
+  background: #e0bbf7; /* softer purple bubbles */
+  color: #311b92;
+  padding: 10px 15px;
+  border-radius: 18px;
+  font-size: 14px;
+  max-width: 200px;
+  word-wrap: break-word;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* Remove extra space below wishes */
+.wishes-section {
+  margin-bottom: 20px;   /* reduce from default */
+  padding-bottom: 10px;
+}
+
+/* Also control spacing for the main page sections */
+section {
+  margin-bottom: 40px; /* adjust as needed */
+}
+
+footer {
+  margin-top: 0;   /* prevent extra gap above footer */
+}
+
+/* Wrapper for the wishes section */
+.wishes-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Remove the extra spacing at the bottom */
+.wishes-section,
+.wish-form-box,
+.wish-list {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Make sure the purple wishes box is contained */
+.wish-list {
+  background: #f3e8ff;   /* soft purple */
+  padding: 20px;
+  border-radius: 15px;
+  max-height: 500px;     /* control height */
+  overflow-y: auto;      /* scroll if too many wishes */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer should stay close */
+footer {
+  margin-top: 20px;
+}
+/* Wrapper for the wishes section */
+.wishes-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px auto 20px auto; /* reduced bottom margin */
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Left box - Leave a wish */
+.wish-form-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Right box - All wishes */
+.wish-list {
+  background: #f3e8ff;   /* soft purple */
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  max-height: 500px;      /* restricts height */
+  overflow-y: auto;       /* scroll instead of overflow */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 0;       /* remove extra purple space */
+}
+
+/* Remove any unintended space */
+.wishes-section + * {
+  margin-top: 0 !important;
+}
+
+/* Footer neatness */
+footer {
+  margin-top: 10px;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+/* Main wrapper for the section */
+.messages {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px auto;   /* space above and below */
+  max-width: 1200px;
+  padding: 0;          /* remove extra padding that caused overflow */
+  background: none;    /* remove unwanted background */
+}
+
+/* Left: Leave a Wish box */
+.wish-form-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Right: All Wishes box */
+.wish-list {
+  background: #f3e8ff;   /* soft purple */
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Ensure footer hugs content */
+footer {
+  margin-top: 20px;
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0;
+  background: none; /* keep section transparent */
+}
+
+/* All Wishes Container */
+.wish-list {
+  background: #e8d8f4; /* soft purple */
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;       /* wrap bubbles to next line */
+  gap: 10px;             /* space between bubbles */
+  max-height: 400px;     /* optional scrollable height */
+  overflow-y: auto;      /* scroll if too many wishes */
+}
+
+/* Individual wish bubble */
+.wish-bubble {
+  display: inline-block;
+  max-width: 200px;        /* keeps bubble compact */
+  padding: 10px 15px;
+  background: #ce93d8;     /* soft purple bubble */
+  color: white;
+  border-radius: 20px 20px 20px 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Optional: show full text on hover */
+.wish-bubble:hover {
+  white-space: normal;
+  overflow: visible;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Balloons for the whole page */
+.balloon {
+  position: absolute;
+  bottom: -100px;
+  width: 30px;
+  height: 40px;
+  background: #ffb6ff;      /* pastel pink */
+  border-radius: 50%;
+  animation: float 5s linear infinite;
+  z-index: 0;               /* behind other content */
+}
+
+/* Balloon float animation */
+@keyframes float {
+  to { transform: translateY(-120vh); }  /* float up the page */
+}
+
+.icon {
+  width: 20px;   /* size */
+  height: 20px;
+  vertical-align: middle; /* align with text */
+  margin-left: 6px;        /* space between text & icon */
+}
+
+footer {
+  background-color: #ce93d8; /* soft purple */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
